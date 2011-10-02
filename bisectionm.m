@@ -12,7 +12,7 @@ while (abs(ymid) > epsilon)
     ya = f_fun1(a);
     yb = f_fun1(b);
     
-    if ((ya < 0 && y < 0)||(ya > 0 && y > 0))
+    if ((ya < 0 && ymid < 0)||(ya > 0 && ymid > 0))
         a = xmid;
     else
         b = xmid;
