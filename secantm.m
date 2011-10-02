@@ -3,10 +3,11 @@ function [ root ] = secantm( est1, est2, epsilon )
 %   Detailed explanation goes here
 prev = est1;
 curr = est2;
-next = 0;
+next = curr;
 
-while abs(f_fun(next))>epsilon
-    next = curr - (f_fun(curr)*((curr - prev)/(f_fun(curr)-f_fun(prev))));
+while abs(f_fun1(curr))>epsilon
+    next = curr - (f_fun1(curr)*((curr - prev)/(f_fun1(curr)-f_fun1(prev))));
+    %f_fun1(next)
     prev = curr;
     curr = next;
     
