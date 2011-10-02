@@ -1,4 +1,4 @@
-function y=f_fun(x);
+function y=f_fun1(x);
 X=0.4550;
 z=0.4037;
 wn=3.4338;
