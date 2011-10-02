@@ -5,7 +5,7 @@ b=b1;
 xmid = (a+b)/2;
 ymid = f_fun1(xmid);
 
-while (abs(y) > epsilon)
+while (abs(ymid) > epsilon)
     
     xmid = (a+b)/2;
     ymid = f_fun1(xmid);
