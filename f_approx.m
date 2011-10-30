@@ -1,0 +1,9 @@
+function x = f_approx (A, dx)%takes column vector A and deltax
+order = size(A);
+order = order(1)-1
+coeff = pascal (order+1);
+coeff = rot90(coeff);
+coeff = diag(coeff);
+coeff(2:2:end) = coeff (2:2:end).*-1;
+res = coeff.*A;
+x = sum(res)/(dx^order);
