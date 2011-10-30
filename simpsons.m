@@ -1,7 +1,7 @@
 function [ axial_disp ] = simpsons( step_size )
 %SIMPSONS Summary of this function goes here
 %   Detailed explanation goes here
-int n = 10 / step_size;
+n = 10 / step_size;
 
 if(mod(n,2))
     error('n is not even');
