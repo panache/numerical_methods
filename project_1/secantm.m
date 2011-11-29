@@ -7,12 +7,10 @@ next = curr;
 
 while abs(f_fun1(curr))>epsilon
     next = curr - (f_fun1(curr)*((curr - prev)/(f_fun1(curr)-f_fun1(prev))));
-    %f_fun1(next)
     prev = curr;
     curr = next;
     
 end
-
 root=next;
 end
 

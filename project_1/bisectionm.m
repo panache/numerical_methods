@@ -9,6 +9,7 @@ while (abs(ymid) > epsilon)
     
     xmid = (a+b)/2;
     ymid = f_fun1(xmid);
+    i=i+1;
     ya = f_fun1(a);
     yb = f_fun1(b);
     
@@ -18,5 +19,4 @@ while (abs(ymid) > epsilon)
         b = xmid;
     end
 end
-
 x_root = xmid;
