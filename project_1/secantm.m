@@ -3,9 +3,9 @@ function [ root ] = secantm( est1, est2, epsilon )
 %   Detailed explanation goes here
 prev = est1;
 curr = est2;
-next = 0;
+next = curr;
 
-while abs(f_fun1(next))>epsilon
+while abs(f_fun1(curr))>epsilon
     next = curr - (f_fun1(curr)*((curr - prev)/(f_fun1(curr)-f_fun1(prev))));
     prev = curr;
     curr = next;
