@@ -5,13 +5,12 @@ prev = est1;
 curr = est2;
 next = 0;
 
-while abs(f_fun(next))>epsilon
-    next = curr - (f_fun(curr)*((curr - prev)/(f_fun(curr)-f_fun(prev))));
+while abs(f_fun1(next))>epsilon
+    next = curr - (f_fun1(curr)*((curr - prev)/(f_fun1(curr)-f_fun1(prev))));
     prev = curr;
     curr = next;
     
 end
-
 root=next;
 end
 
